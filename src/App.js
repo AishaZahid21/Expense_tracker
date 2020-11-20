@@ -1,20 +1,23 @@
 import './App.css';
-import AccountSummary from './components/accountSummary';
-import AddTransaction from './components/addTransaction';
-import Balance from './components/balance';
-import Header from './components/header';
-import TransactionHistory from './components/transactionHistory';
+import AccountSummary from './components/AccountSummary';
+import AddTransaction from './components/AddTransaction';
+import Balance from './components/Balance';
+import Header from './components/Header';
+import TransactionHistory from './components/TransactionHistory';
 
+import  { GlobalProvider } from "./context/GlobalState"
 function App() {
   return (
+    <GlobalProvider>
     <div>
       <Header />
       <div className="container"></div>
       <Balance />
       <AccountSummary />
       <TransactionHistory />
-      <AddTransaction/>
-    </div>
+      <AddTransaction />
+      </div>
+      </GlobalProvider>
   );
 }
 
