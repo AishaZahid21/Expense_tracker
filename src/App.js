@@ -1,11 +1,19 @@
 import './App.css';
+import AccountSummary from './components/accountSummary';
+import AddTransaction from './components/addTransaction';
+import Balance from './components/balance';
+import Header from './components/header';
+import TransactionHistory from './components/transactionHistory';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Annyonghasyeo urobun</h1>
-      </header>
+    <div>
+      <Header />
+      <div className="container"></div>
+      <Balance />
+      <AccountSummary />
+      <TransactionHistory />
+      <AddTransaction/>
     </div>
   );
 }
