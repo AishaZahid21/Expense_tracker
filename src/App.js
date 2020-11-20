@@ -1,5 +1,5 @@
 import './App.css';
-import AccountSummary from './components/AccountSummary';
+// import AccountSummary from './components/AccountSummary';
 import AddTransaction from './components/AddTransaction';
 import Balance from './components/Balance';
 import Header from './components/Header';
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div className="container"></div>
       <Balance />
-      <AccountSummary />
+      {/* <AccountSummary /> */}
       <TransactionHistory />
       <AddTransaction />
       </div>
