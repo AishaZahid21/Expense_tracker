@@ -1,9 +1,6 @@
 import './App.css';
 // import AccountSummary from './components/AccountSummary';
-import AddTransaction from './components/AddTransaction';
-import Balance from './components/Balance';
-import Header from './components/Header';
-import TransactionHistory from './components/TransactionHistory';
+import Header from "./components/Header"
 
 import  { GlobalProvider } from "./context/GlobalState"
 function App() {
@@ -12,10 +9,10 @@ function App() {
     <div>
       <Header />
       <div className="container"></div>
-      <Balance />
+      {/* <Balance /> */}
       {/* <AccountSummary /> */}
-      <TransactionHistory />
-      <AddTransaction />
+      {/* <TransactionHistory /> */}
+      {/* <AddTransaction /> */}
       </div>
       </GlobalProvider>
   );
