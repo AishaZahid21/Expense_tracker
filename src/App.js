@@ -1,14 +1,14 @@
 import './App.css';
 // import AccountSummary from './components/AccountSummary';
-// import Header from "./components/Header"
+import Header from "./components/header"
 
 import  { GlobalProvider } from "./context/GlobalState"
 function App() {
   return (
     <GlobalProvider>
     <div>
-      {/* <Header /> */}
-      <div className="container">hello</div>
+      <Header />
+      <div className="container"></div>
       {/* <Balance /> */}
       {/* <AccountSummary /> */}
       {/* <TransactionHistory /> */}
